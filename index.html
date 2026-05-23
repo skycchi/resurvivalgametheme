@@ -998,9 +998,11 @@ replay
 
         <!-- scripts -->
         <script>
+            {block:ifredirect}
             if(location.pathname == "/"){
                 location.replace("/tagged/{text:redirect}");
             }
+            {/block:ifredirect}
         </script>
     </body>
 </html>
