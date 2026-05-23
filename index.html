@@ -188,7 +188,6 @@
         <meta name="select:border 2 style" content="outset" title="outset" />
 
         <meta name="if:&#xB68;&#xB67;&#x20;&#x23D4;&#x23D4;&#x23D4;&#x23D4;&#x20;&#x74;&#x6F;&#x67;&#x67;&#x6C;&#x65;&#x73;&#x20;&#x23D4;&#x23D4;&#x23D4;&#x23D4;&#x20;&#xB68;&#xB67;&#x200A;&#x200A;&#x200A;&#x200A;" content="0" />
-        <meta name="if:infinite scroll" content="0" />
         <meta name="if:redirect" content="0" />
         <meta name="if:hover tags" content="0" />
         <meta name="if:links glow" content="0" />
@@ -996,5 +995,12 @@ replay
                 ><span class="material-symbols-outlined">favorite</span></a
             >
         </div>
+
+        <!-- scripts -->
+        <script>
+            if(location.pathname == "/"){
+                location.replace("/tagged/{text:redirect}");
+            }
+        </script>
     </body>
 </html>
